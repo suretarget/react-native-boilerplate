@@ -1,10 +1,28 @@
-# react-native-boilerplate
+# Instagram UI react-native-boilerplate 😄
 
-React Native boilerplate using react-native-cli with react-navigation
+Instagram UI Clone developed using [react-native-boilerplate](https://github.com/prasanthLalapeta/react-native-boilerplate) :raised_hands: :muscle:
 
 ## Description
 
-> Created React Native boilerplate using react-native-cli. This sample scaffolding can be used for any projects from small scale to large scale.
+> Developed Instagram UI with the help of react-native-boilerplate. This sample scaffolding can be used for any projects from small scale to large scale if you want to develop Instagram kind of app.
+
+## ScreenShots
+
+![Instagram UI Clone](https://raw.githubusercontent.com/prasanthLalapeta/Assets/master/react-native/Instagram-Clone.png)
+
+## Sctructure
+
+```
+ - AppSwitchNavigator
+    - AuthenticationScreen
+      - Login Button
+    - HomeScreen - HomeScreenTabNavigator
+      - Tab 1 - HomeStack
+      - Tab 2 - FavouritesStack
+      - Tab 3 - NotificationsStack
+      - Tab 4 - ProfileStack
+    - Any files you don't want to be a part of the Tab Navigator can go here.
+```
 
 ## JDK and Android development environment setup
 
@@ -19,7 +37,7 @@ cd react-native-boilerplate
 
 npm install
 
-react-native Start
+react-native start
 
 react-native run-android
 ```

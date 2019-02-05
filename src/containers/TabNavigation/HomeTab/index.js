@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { Container, Content } from 'native-base';
+import CardComponent from '../../CardComponent';
 import { styles } from './styles';
 
 export class HomeTab extends Component {
@@ -8,27 +10,38 @@ export class HomeTab extends Component {
     return {
       headerLeft: (
         <Icon
-          style={{ paddingLeft: 10 }}
-          onPress={() => navigation.openDrawer()}
-          name="md-menu"
+          style={{ paddingLeft: 20 }}
+          name="md-camera"
           size={30}
         />
       ),
+      title: "Instagram Clone",
       headerRight: (
         <Icon
-          style={{ paddingRight: 10 }}
-          name="md-settings"
+          style={{ paddingRight: 20 }}
+          name="md-person-add"
           size={30}
         />
-      )
+      ),
+      headerTitleStyle:{
+      	fontSize:24,
+        fontWeight:'500',
+        flex: 1,
+        textAlign: 'center',
+      	alignSelf:'center'
+      }
     };
   }
   render() {
     return (
-      <View style={styles.centerWrapper}>
-        <Text>Home tab!</Text>
-        <Button title="Go To Detail Screen" onPress={() => this.props.navigation.navigate('Details')} />
-      </View>
+      <Container>
+        <Content>
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
+          <CardComponent />
+        </Content>
+      </Container>
     );
   }
 }

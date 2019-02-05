@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
+import { Icon } from 'native-base'
 import { styles } from './styles';
 
-export class Card extends Component {
+export class StoriesTab extends Component {
   render() {
     return (
-      <View>
-        <Text style={styles.header}>Card {this.props.name}!</Text>
+      <View style={styles.centerWrapper}>
+        <Text>Stories Tab!</Text>
       </View>
     );
   }
